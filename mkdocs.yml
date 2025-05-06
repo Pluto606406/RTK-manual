@@ -1,5 +1,27 @@
-site_name: My site
+site_name: RTK文档网站
 site_url: https://mydomain.org/mysite
+nav:
+  - 主页: index.md
+  - 通用注意事项: general.md
+  - 板卡手册:
+    - 4G系列:
+      - B94: b94.md
+      - B84: b84.md
+      - B74: b74.md
+    - 自带数传系列:
+      - B92: b92.md
+      - B80: b80.md
+      - B72: b72.md
+    - 其他:
+      - B50: b50.md
+      - R50: r50.md
+      - R20: r20.md
+  - 地面站设置:
+    - Mission Planner: mp.md
+    - QGC: qgc.md
+  - ROS2使用: ros2.md
+  - 其它资料: other.md
+  - RTK学习: rtk.md
 theme:
   name: material
   palette: 
