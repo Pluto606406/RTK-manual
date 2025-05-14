@@ -6,3 +6,7 @@
     padding-right: 2rem;
     /* 添加右侧内边距 */
 }
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
