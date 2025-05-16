@@ -1,5 +1,7 @@
 # QGC操作手册
 
+&emsp;点击链接观看视频：[QGC改参数](https://www.bilibili.com/video/BV1eCEtzaEgJ){:target="_blank"}
+
 ## 1	准备工作
 &emsp;&emsp;感谢您选用我们的导航板卡，我们的板卡适用于PX4固件+Pixhawk硬件（或衍生硬件）组成的飞控平台，提供高精度的定位（定向）数据。具体指标请参考对应板卡手册。<br>
 &emsp;&emsp;本文档对需要在QGC地面站中进行的操作进行了说明。<br>

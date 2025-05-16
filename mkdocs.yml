@@ -22,6 +22,7 @@ nav:
     - 地面站设置:
       - Mission Planner: mp/mp.md
       - QGC: qgc/qgc.md
+    - 定向改配置: heading/heading.md
   - ROS2使用: ros2/ros2.md
   - RTK学习: 
     - RTK原理: rtk/rtk.md
