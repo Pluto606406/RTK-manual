@@ -5,6 +5,7 @@ nav:
   - 通用注意事项: general/general.md
   - 板卡手册:
     - 集成4G系列:
+      - B96: b96/b96.md
       - B94: b94/b94.md
       - B84: b84/b84.md
       - B74: b74/b74.md
