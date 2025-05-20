@@ -1,0 +1,12 @@
+.md-header__inner {
+    max-width: none;
+    /* 移除最大宽度限制 */
+    padding-left: 2rem;
+    /* 添加左侧内边距 */
+    padding-right: 2rem;
+    /* 添加右侧内边距 */
+}
+.center-image {
+    display: block;
+    margin: 0 auto;
+}

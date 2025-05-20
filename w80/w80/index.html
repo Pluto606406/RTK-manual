@@ -1,0 +1,1583 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/w80/w80/">
+      
+      
+        <link rel="prev" href="../../b74/b74/">
+      
+      
+        <link rel="next" href="../../b92/b92/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>W80 - RTK文档网站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#w80" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="RTK文档网站" class="md-header__button md-logo" aria-label="RTK文档网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RTK文档网站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              W80
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="RTK文档网站" class="md-nav__button md-logo" aria-label="RTK文档网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RTK文档网站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    通用注意事项
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    板卡手册
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            板卡手册
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    集成4G系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            集成4G系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b96/b96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B96
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b94/b94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B94
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b84/b84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B84
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b74/b74/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B74
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    集成WIFI系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            集成WIFI系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W80
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    W80
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 接口说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Base模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-rover" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Rover模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 WiFi网络
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 配置页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 典型应用场景
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 典型应用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 无人机自建基站
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 固定场地内的基站和移动端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 定位信息实时采集
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    集成数传系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            集成数传系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b92/b92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B92
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b80/b80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B80
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b72/b72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B72
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    仅RTK系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            仅RTK系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b50/b50/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B50
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r50/r50/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    R50/R20
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    无人机使用
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            无人机使用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fmu/fmu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    支持的飞控
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    地面站设置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            地面站设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mp/mp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission Planner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qgc/qgc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../heading/heading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    定向改配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ros2/ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROS2使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    RTK学习
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            RTK学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rtk/rtk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RTK原理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rtk/BDonly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    单北斗模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/other/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    其它资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 接口说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Base模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-rover" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Rover模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 WiFi网络
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 配置页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 典型应用场景
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 典型应用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 无人机自建基站
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 固定场地内的基站和移动端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 定位信息实时采集
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="w80">W80板卡手册</h1>
+<p>&emsp;点击链接观看视频：<a href="https://www.bilibili.com/video/BV1KgqHYTEx9" target="_blank">W80演示视频</a></p>
+<h2 id="1">1    简介</h2>
+<p>&emsp;&emsp;W80集成了RTK模块和2.4G WiFi模块，支持NTRIP Caster，NTRIP Client，NTRIP server模式，支持TCP/UDP Server和Client模式。RTK基站/移动站模式和不同协议可灵活组合，满足多种应用场景的需求。典型应用场景及对应的协议组合举例请跳至第7节。<br>
+&emsp;&emsp;RTK模块为全系统全频，支持北斗，GPS，Glonass，伽利略以及QZSS导航系统的所有民用频段。模块可工作在Base基站或者Rover移动站模式，通过UART接口或者网络远程配置工作模式，配置命令可保存，再次上电可自动加载保存的工作模式及参数。<br>
+&emsp;&emsp;支持千寻位置，六分科技，中移等第三方CORS服务。<br>
+主要指标如下图所示。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>性能指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNSS 接收频点</td>
+<td>GPS: L1/L2/L5<br>BDS: B1I/B1C/B2I/B2a/B3I<br>GLONASS L1/L2<br>Galileo: E1/E5a/E5b<br>QZSS L1/L2/L5</td>
+</tr>
+<tr>
+<td>UART 波特率</td>
+<td>115200 8N1 可配其它波特率</td>
+</tr>
+<tr>
+<td>数据更新率 (Hz)</td>
+<td>1Hz, 5Hz, 10Hz, 20Hz</td>
+</tr>
+<tr>
+<td>定位精度</td>
+<td>GNSS 3D 2.5m CEP 50<br>D-GNSS &lt;1.0m CEP 50<br>RTK 1cm+1ppm(水平)<br>3cm+1ppm(垂直)</td>
+</tr>
+<tr>
+<td>接口</td>
+<td>USB Type C供电 串口<br>GH1.25mm 6Pin插座<br>WiFi天线 SMA外螺内孔<br>GNSS天线  SMA外螺内孔</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>NMEA 0183 协议<br>RTCM 3.0/3.2/ MSM4 (收发)</td>
+</tr>
+<tr>
+<td>尺寸</td>
+<td>64 X 64 X 57mm</td>
+</tr>
+<tr>
+<td>重量</td>
+<td>77克</td>
+</tr>
+<tr>
+<td>工作电压</td>
+<td>5V~24V （不可低于5V）</td>
+</tr>
+<tr>
+<td>工作电流</td>
+<td>250mA@5V，150mA@9V</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2">2    接口说明</h2>
+<p><img alt="W80" class="center-image" src="../pic1.png" /></p>
+<ul>
+<li>状态指示灯分别为3.3V 红色，RTK Fix 白色，3D定位 绿色，工作模式指示灯 多色。</li>
+<li>Type C接口为供电及串口，使用USB数据线连接到电脑USB口，电脑会自动识别串口，可使用串口助手对W80的RTK模式进行配置。</li>
+<li>GH1.25 6pin插座为供电及UART接口，在Rover模式下发送NMEA数据，接收配置命令。引脚定义如下。</li>
+</ul>
+<p><img alt="GH1.25" src="../../b94/pic2.png" /> </p>
+<table>
+<thead>
+<tr>
+<th>引脚</th>
+<th>定义</th>
+<th>电平</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>VCC</td>
+<td>MAX 5.3V</td>
+</tr>
+<tr>
+<td>2</td>
+<td>RXD收</td>
+<td>3.3V</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TXD发</td>
+<td>3.3V</td>
+</tr>
+<tr>
+<td>4</td>
+<td>NC</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>NC</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>GH1.25 UART口对应配置文件中COM1， USB串口对应配置文件中COM3，两个串口完全独立，可发送不同的消息类型及配置不同波特率。
+ </p>
+</div>
+<h2 id="3-base">3    Base模式</h2>
+<p>&emsp;&emsp;Base模式和Rover模式通过内置的配置页面进行选择。<br>
+&emsp;&emsp;如配置为Base模式，上电后会自动进入求坐标平均值模式（Survey In）并持续3分钟，3分钟后W80自动获取到一个固定坐标，可通过NTRIP Caster或TCP服务器输出RTCM差分数据：1005 (0.1Hz)，1074(1Hz)，1084(1Hz)，1094(1Hz)，1124(1Hz)，1114(1Hz)。此时其它W80移动站Rover，或者无人机遥控器可接收此差分数据进行RTK解算。<br></p>
+<div class="admonition note">
+<p class="admonition-title">通用基站</p>
+<p>&emsp;&emsp;W80支持目前所有卫星系统的所有民用频段，因此可作为通用的自建基站，支持多种型号的移动站。</p>
+</div>
+<p>&emsp;&emsp;Base的GNSS天线位置请尽量选择开阔无遮挡的环境，并且架设高度尽量高，可使用底部的1/4英寸云台快接口将W80放置在三脚架上。如果周围遮挡较多，可能会出现3分钟后W80仍然无法获得固定坐标，移动站只能3D定位，无法进行RTK解算。<br>
+&emsp;&emsp;W80在大多数情况下可以允许有部分遮挡，这是多频模块的优点，但是最好不要超过三分之一的可视天空面积。<br></p>
+<div class="admonition note">
+<p class="admonition-title">基站坐标</p>
+<p>&emsp;&emsp;通过求坐标平均值方式获取的基站坐标并不是真正意义的精准坐标（厘米级），即使天线位置固定不动，每次重新上电或复位后获取的坐标会分布在半径约1.5米的圆内。移动站Rover在RTK Fix的状态下和基站Base的相对位置总是精确的，因此Base的绝对位置不准会导致移动站Rover绝对位置不准，但两者的偏差是一致的。在无人机，无人船等应用中如果只要求相对位置准确（如自动返航功能等），则可以不要求Base基站绝对位置准确。</p>
+</div>
+<p>&emsp;&emsp;如果需要移动站Rover绝对位置准确，则Base基站的绝对位置(天线位置)必须准确，您需要通过其它方法（如使用CORS）获取Base基站的准确的经纬度坐标，然后通过UART写入到W80中。经纬度坐标需要精确到小数点后第7位。<br>
+<div class="highlight"><pre><span></span><code>配置命令示例：
+//22.5450078<span class="w"> </span>纬度<span class="w"> </span>；113.9359845<span class="w"> </span>经度；28.17<span class="w"> </span>高程
+mode<span class="w"> </span>base<span class="w"> </span><span class="m">22</span>.5450078<span class="w"> </span><span class="m">113</span>.9359845<span class="w"> </span><span class="m">28</span>.17<span class="w"> </span>
+//保存配置
+saveconfig<span class="w">                                                    </span>
+</code></pre></div></p>
+<h2 id="4-rover">4    Rover模式</h2>
+<p>&emsp;&emsp;如配置为Rover模式，上电后会立刻开始搜索卫星尝试定位，GH1.25或USB串口有NMEA数据输出，无RTCM消息。正常情况下上电1分钟左右3D定位成功，绿色3D指示灯亮。<br>
+&emsp;&emsp;Rover模式下如需RTK精确定位，可使用自建基站，也可使用千寻，六分等第三方CORS服务，下面分别说明。<br>
+&emsp;&emsp;自建基站方式需提前架设好另一台W80在Base模式，并打开NTRIP Caster或/和TCP服务器功能。W80 Rover端通过网页界面打开NTRIP Client功能或TCP客户端功能，配置好相应的IP/端口号后Rover会自动接收RTCM差分数据并解算。当进入RTK fix状态后，板上白色RTK指示灯会亮起。<br>
+&emsp;&emsp;使用第三方CORS服务时，通过网页界面配置CORS账号，密码等等，同时所连接的WiFi网络应能够访问公网，W80会自动连接连接CORS，当进入RTK fix状态后，板上RTK指示灯会亮起。<br>
+&emsp;&emsp;和Base模式相同，Rover模式下天线尽量保持在无遮挡环境，通常Rover会处在运动中，如果进入遮挡较多的地点，可能会退出RTK Fix状态。<br>
+&emsp;&emsp;Rover移动站模式下UART接口默认输出GGA，RMC消息，默认刷新率5Hz，如需其它消息或刷新率请联系我们。<br>
+ </p>
+<h2 id="5-wifi">5    WiFi网络</h2>
+<p>&emsp;&emsp;W80集成的WiFi模块仅支持2.4G频段，暂不支持5G频段。<br>
+&emsp;&emsp;支持热点模式和设备模式。热点模式下可接入其它的W80或者WiFi设备，例如无人机的遥控器，手机等等。设备模式可接入现有的WiFi网络，需提前配置好接入的无线网络和密码等，重启后即可自动接入，实现多种功能。热点模式和设备模式可同时工作，可在配置页面内选择打开/关闭。一般不建议关闭热点模式。<br>
+ </p>
+<h2 id="6">6    配置页面</h2>
+<p>&emsp;&emsp;第一次使用需要对W80进行相应的配置，主要为WiFi网络，NTRIP功能，TCP/UDP功能。所有的配置选项在提交后会自动保存，下次上电后会自动加载之前的配置。<br>
+&emsp;&emsp;W80出厂默认打开了WiFi热点功能，上电后会出现一个名为“ESP_Xbee_xxxxxx”的网络，其中“xxxxxx”为一个随机产生的字母数字组合，每一个W80是唯一且固定的，在PC上点击WiFi连接，选择这个网络并连接。<br></p>
+<p><img alt="wifi" src="../pic2.png" /> <img alt="wifi" src="../pic3.png" /> </p>
+<p>&emsp;&emsp;连接成功后在PC上打开一个浏览器，在地址栏输入IP地址“192.168.4.1”，即可出现下图的配置页面。<br>
+&emsp;&emsp;也可使用平板和手机进行操作同，只是选取WiFi网络的步骤不同，在此不再赘述。<br></p>
+<p><img alt="config" src="../pic4.png" />  </p>
+<p>&emsp;&emsp;配置页面中有多个不同的卡片，分别对应配置不同的功能，但基本的配置逻辑相同。配置完成后点击“提交”按钮，W80的WiFi模块会重启使得配置生效。请注意WiFi热点功能一般不要关闭，否则WiFi接入网络配置错误时（如WiFi接入点或密码错误），无法再访问配置页面来更改配置。<br>
+&emsp;&emsp;第一次配置时，除热点功能外，其它的功能默认都是关闭的，卡片上的配置选项不可见。下面以配置WiFi网络为例进行说明。<br></p>
+<p><img alt="config" class="center-image" src="../pic5.png" /> </p>
+<p>&emsp;&emsp;首先点击功能开关到右侧，所有配置内容即变得可见，点击“Scan”扫描周围可用的WiFi网络。<br></p>
+<p><img alt="config" class="center-image" src="../pic6.png" /> </p>
+<p>&emsp;&emsp;选取要连接的网络（图中以连接到Justin 2.4G网络为例），填入Justin 2.4G网络的WiFi的密码。其它的配置项保持不变即可。<br></p>
+<p><img alt="config" class="center-image" src="../pic7.png" /> 
+<img alt="config" class="center-image" src="../pic8.png" /></p>
+<p>&emsp;&emsp;每个功能模块可自定义一个颜色，此颜色将显示在W80的多功能指示灯上，用户可根据灯的显示快速判断此时哪一个或几个功能模块在工作中。如果选择黑色（默认），则代表不启用灯色指示功能。</p>
+<p><img alt="config" class="center-image" src="../pic9.png" /> 
+<img alt="config" class="center-image" src="../pic10.png" /> </p>
+<p>&emsp;&emsp;完成后点击“提交”按钮，再点击“Reload”按钮，WiFi模块将重启并使设置生效。</p>
+<p><img alt="config" class="center-image" src="../pic11.png" /> </p>
+<p>&emsp;&emsp;稍等片刻刷新页面（注意此时仍需要连接W80的Wifi热点，如果在W80重启过程中PC已连接到其它热点，请参照前面的步骤重新连接到W80的热点），可以看到W80已成功连接到Justin 2.4G网络并获取了IP地址。</p>
+<p><img alt="config" class="center-image" src="../pic12.png" /> </p>
+<p>&emsp;&emsp;至此我们可以将PC重新连接回Justin 2.4G网络，并通过IP：192.168.1.33来访问配置页面，配置其它的功能选项。</p>
+<p><img alt="config" class="center-image" src="../pic13.png" />  </p>
+<p>&emsp;&emsp;下面对其它各功能卡片的配置项做一个简要的说明。<br>
+&emsp;&emsp;NTRIP Client配置：</p>
+<p><img alt="config" class="center-image" src="../pic14.png" /> </p>
+<p>&emsp;&emsp;下面以中移动CORS账号为例，说明配置的内容</p>
+<p><img alt="config" class="center-image" src="../pic15.png" /> 
+<img alt="config" class="center-image" src="../pic16.png" /> </p>
+<p>&emsp;&emsp;NTRIP Caster配置</p>
+<p><img alt="config" class="center-image" src="../pic17.png" /> </p>
+<p>&emsp;&emsp;如果其它的NTRIP Client要连接这个Caster，就需要填入正确的配置项。<br>
+&emsp;&emsp;TCP/UDP配置</p>
+<p><img alt="config" class="center-image" src="../pic18.png" /> </p>
+<p>&emsp;&emsp;如果打开了TCP/UDP功能，可以通过网络远程获取定位信息GNGGA语句（Rover模式下），或者RTCM差分数据（Base模式下）。也可远程配置RTK模块，切换Base/Rover模式，或者配置UART/Type C串口输出的消息类型，刷新率等等。<br></p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>&emsp;&emsp;如需向后台服务器上报GGA语句，建议W80使用UDP客户端模式或者TCP服务器模式。不建议使用TCP客户端模式，TCP客户端模式下一旦WIFI网络出现重连接或者TCP目标服务器因意外关闭连接，则无法自动恢复，需要重新上电后才能再次连接。
+</p>
+</div>
+<h2 id="7">7    典型应用场景</h2>
+<h3 id="1_1">1  无人机自建基站</h3>
+<p>&emsp;&emsp;W80作为自建CORS基站，在手机信号覆盖较差的野外，为无人机遥控器充当CORS基站，例如DJI的行业系列无人机，Ardupilot开源飞控无人机等。只要带屏遥控器支持WiFi且内置的地面站软件支持访问CORS，就可以使用。<br></p>
+<h3 id="2_1">2  固定场地内的基站和移动端</h3>
+<p>&emsp;&emsp;在固定场地内如有稳定的WiFi覆盖，例如工业园区或机器人实验场地，可使用W80作为基站和移动站，W80移动站在串口输出定位信息给机器人控制板的同时，还可以通过网络发送GNGGA定位消息给后台UDP服务器。或者后台采用TCP客户端，读取每个W80移动站的GNGGA消息。<br>
+&emsp;&emsp;如果移动端的数量较多，超出了W80基站的带机能力，则需要另外设立NTRIP Caster服务器，将一个或多个W80配置为NTRIP Server模式，或TCP客户端，上传差分数据到NTRIP Caster服务器。其它的移动站连接NTRIP Caster服务器获取差分数据。<br></p>
+<h3 id="3">3  定位信息实时采集</h3>
+<p>&emsp;&emsp;配置W80移动站连接手机热点，配置访问中移动或千寻的CORS服务，配置上传定位消息的服务器IP和端口号，即可实现定位信息的采集，上传。例如放置在车辆上，可实现高精度的车辆行驶轨迹上传。注意当车辆驶入高架桥下，隧道时，可能无法实现RTK高精度定位。<br>
+<br>
+&emsp;前往淘宝店选购：<a href="https://shop571754683.taobao.com/" target="_blank">淘宝店铺</a>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+前往B站查看教程：<a href="https://space.bilibili.com/1105134755" target="_blank">Bilibili</a><br>
+ <img alt="淘宝" src="../../link/taobao.png" /> <strong>欢迎扫码访问</strong> <img alt="B站" src="../../link/bili.png" /> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

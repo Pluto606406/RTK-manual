@@ -1,0 +1,1598 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/qgc/qgc/">
+      
+      
+        <link rel="prev" href="../../mp/mp/">
+      
+      
+        <link rel="next" href="../../heading/heading/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>QGC - RTK文档网站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#qgc" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="RTK文档网站" class="md-header__button md-logo" aria-label="RTK文档网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RTK文档网站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              QGC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="RTK文档网站" class="md-nav__button md-logo" aria-label="RTK文档网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RTK文档网站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    通用注意事项
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    板卡手册
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            板卡手册
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    集成4G系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            集成4G系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b96/b96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B96
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b94/b94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B94
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b84/b84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B84
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b74/b74/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B74
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    集成WIFI系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            集成WIFI系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../w80/w80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W80
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    集成数传系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            集成数传系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b92/b92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B92
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b80/b80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B80
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b72/b72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B72
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    仅RTK系列
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            仅RTK系列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../b50/b50/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    B50
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../r50/r50/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    R50/R20
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    无人机使用
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            无人机使用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fmu/fmu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    支持的飞控
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    地面站设置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            地面站设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mp/mp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission Planner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    QGC
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGC
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 准备工作
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-px4qgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 PX4+QGC已知问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 PX4+QGC已知问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用CORS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b50r50r20" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用B50+R50/R20组合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用双GPS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 硬件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-qgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 QGC参数修改
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 QGC参数修改">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-qgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 查看QGC版本
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 查看飞控固件版本
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 修改GPS接口协议
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. GPS详细数据查看
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 使用双GPS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. GPS状态栏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 航向Heading
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../heading/heading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    定向改配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ros2/ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROS2使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    RTK学习
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            RTK学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rtk/rtk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RTK原理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rtk/BDonly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    单北斗模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/other/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    其它资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 准备工作
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-px4qgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 PX4+QGC已知问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 PX4+QGC已知问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用CORS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b50r50r20" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用B50+R50/R20组合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用双GPS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 硬件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-qgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 QGC参数修改
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 QGC参数修改">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-qgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 查看QGC版本
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 查看飞控固件版本
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 修改GPS接口协议
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. GPS详细数据查看
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 使用双GPS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. GPS状态栏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 航向Heading
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="qgc">QGC操作手册</h1>
+<p>&emsp;点击链接观看视频：<a href="https://www.bilibili.com/video/BV1eCEtzaEgJ" target="_blank">QGC改参数</a></p>
+<h2 id="1">1    准备工作</h2>
+<p>&emsp;&emsp;感谢您选用我们的导航板卡，我们的板卡适用于PX4固件+Pixhawk硬件（或衍生硬件）组成的飞控平台，提供高精度的定位（定向）数据。具体指标请参考对应板卡手册。<br>
+&emsp;&emsp;本文档对需要在QGC地面站中进行的操作进行了说明。<br>
+&emsp;&emsp;在开始配置前，请准备好下列物品：<br></p>
+<ul>
+<li>导航板卡。<br></li>
+<li>Pixhawk兼容飞控硬件，固件建议使用官方最新正式版本。<br></li>
+<li>QGC地面站软件，建议使用官方最新正式版本。<br></li>
+</ul>
+<h2 id="2-px4qgc">2    PX4+QGC已知问题</h2>
+<h3 id="cors">使用CORS</h3>
+<p>&emsp;&emsp;截至QGC地面站V4.2.4版本，PX4固件1.13.2版本，QGC地面站软件未提供Ntrip服务端功能，无法直接使用第三方CORS服务。如果确实需要使用CORS，有两种方法：<br>
+&emsp;&emsp;a. 选用B94，B84，B74，B96板卡，这些板卡集成了4G模块，可直接访问CORS，不再需要地面站访问CORS。<br>
+&emsp;&emsp;b. 使用MAVProxy软件，具体方法请联系我们。<br></p>
+<h3 id="b50r50r20">使用B50+R50/R20组合</h3>
+<p>&emsp;&emsp;QGC也不提供标准RTCM转发功能，即无法使用B50+R50/R20组合的方案。在这种情况下，R50，R20可以在飞控端使用，但是无法做RTK高精度定位，只能提供普通精度的定位坐标。<br>
+&emsp;&emsp;如要实现RTK高精度定位，请选用B72，B80，B90，B92等集成数传的定位板卡，并使用自建基站。<br></p>
+<h3 id="gps">使用双GPS</h3>
+<p>&emsp;&emsp;PX4固件可使用双GPS输入，但是默认飞控上电时GPS1必须连接。如果GPS1未连接，即使GPS2连接正常，也无法正确识别定位。因此在调试PX4时如果只有一个GPS，请接入GPS1接口。如果要调试GPS2接口，请保证GPS1接口也连接了另外一个GPS模块。<br></p>
+<div class="admonition note">
+<p class="admonition-title">Ardupilot+Missonplaner</p>
+<p>Ardupilot固件+Missonplaner地面站软件不存在上述限制，大部分飞控硬件都可以刷两种固件，请根据需要选择。</p>
+</div>
+<h2 id="3">3    硬件</h2>
+<p>以Pixhawk 6C，B92为例，下图为连接飞控GPS1示意图。</p>
+<p><img alt="QGC" class="center-image" src="../../mp/pic1.png" /></p>
+<p>&emsp;&emsp;Pixhawk 6C的GPS 1 接口集成了安全开关，LED功能，如希望继续使用安全开关，LED功能，通过一个转接板连接，转接板说明如下图。此转接板断开了原装GPS的串口，连接了B92板卡的串口。</p>
+<p><img alt="QGC" class="center-image" src="../../mp/pic2.png" /></p>
+<p>&emsp;&emsp;我们所有板卡的GH1.25接口都参照Pixhawk4/6的接口定义设计，这两种飞控可使用板卡附带的线束直插连接，不需要用户调整线序。<br>
+&emsp;&emsp;下图为Pixhawk4/6的接口定义和我公司板卡接口定义。<br></p>
+<p><img alt="GH1.25" src="../../b94/pic2.png" /> </p>
+<table>
+<thead>
+<tr>
+<th>引脚</th>
+<th>Pixhawk4/6定义</th>
+<th>板卡定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>VCC 5V输出</td>
+<td>VCC 5V输入</td>
+</tr>
+<tr>
+<td>②</td>
+<td>TXD发</td>
+<td>RXD收</td>
+</tr>
+<tr>
+<td>③</td>
+<td>RXD收</td>
+<td>TXD发</td>
+</tr>
+<tr>
+<td>④</td>
+<td>SCL</td>
+<td>空</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>SDA</td>
+<td>空</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<p>&emsp;&emsp;如使用其它飞控，请自行确认或调整线序符合上图中的对应关系，特别注意飞控的TX接板卡的RX，飞控的RX接板卡的TX。<br>
+&emsp;&emsp;以Pixhawk 6C，B92为例，下图为连接飞控GPS2示意图。<br></p>
+<p><img alt="QGC" class="center-image" src="../../mp/pic3.png" /></p>
+<p>&emsp;&emsp;以Pixhawk2.4.8，B92为例，下图为连接飞控GPS1示意图。<br></p>
+<p><img alt="QGC" class="center-image" src="../../mp/pic4.png" />
+ </p>
+<h2 id="4-qgc">4    QGC参数修改</h2>
+<h3 id="1-qgc">1.  查看QGC版本</h3>
+<p><img alt="QGC" class="center-image" src="../pic5.png" /></p>
+<h3 id="2">2.  查看飞控固件版本</h3>
+<p><img alt="QGC" class="center-image" src="../pic6.png" /></p>
+<h3 id="3-gps">3.  修改GPS接口协议</h3>
+<p><img alt="QGC" class="center-image" src="../pic7.png" /></p>
+<p>&emsp;&emsp;点击右上角保存后按提示确认重启飞控。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic8.png" /></p>
+<p>&emsp;&emsp;GPS 2的修改同GPS 1。如果GPS 1使用原装GPS，则只修改GPS 2.<br>
+&emsp;&emsp;回到主界面，可看到已正确识别GPS。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic9.png" /> </p>
+<h3 id="4-gps">4. GPS详细数据查看</h3>
+<p><img alt="QGC" class="center-image" src="../pic10.png" /> </p>
+<p>&emsp;&emsp;同时连接2个GPS时：<br></p>
+<p><img alt="QGC" class="center-image" src="../pic11.png" /> </p>
+<p>&emsp;&emsp;查看fix_type的值可确认GPS的定位状态，数值定义如下：<br></p>
+<p><img alt="QGC" class="center-image" src="../pic12.png" /> </p>
+<h3 id="5-gps">5. 使用双GPS</h3>
+<p>&emsp;&emsp;更改参数<strong>SENS_GPS_MASK</strong>。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic13.png" /> </p>
+<h3 id="6-gps">6. GPS状态栏</h3>
+<p>&emsp;&emsp;因为QGC地面站中文版本的Bug，在下面界面中不会显示RTK定位状态而是显示为空，如需要显示，需将QGC的语言切换为英文，即可正常显示。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic14.png" /> </p>
+<p>&emsp;&emsp;更换语言版本，更换后需重启QGC。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic15.png" /> </p>
+<p>&emsp;&emsp;英文版中正常显示。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic17.png" /> 
+<img alt="QGC" class="center-image" src="../pic16.png" /><br />
+</p>
+<h3 id="7-heading">7.  航向Heading</h3>
+<p>&emsp;&emsp;B92，B94，B96板卡提供了双天线定向功能，可以提供给飞控一个准确的航向，相比磁罗盘，GPS航向不受干扰，更准确。<br>
+&emsp;&emsp;双天线定向功能和RTK高精度定位功能无关，即使定位状态为3D定位，航向信息也是准确的。<br>
+&emsp;&emsp;PX4固件<strong>1.13.X</strong>中使用 <strong>EKF2_AID_MASK</strong>参数。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic18.png" /> </p>
+<p>&emsp;&emsp;PX4固件<strong>1.14.X</strong>中使用 <strong>EKF2_GPS_CTRL</strong>参数，<strong>EKF2_AID_MASK</strong>参数不再使用。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic19.png" /> </p>
+<p><img alt="QGC" class="center-image" src="../pic20.png" /> </p>
+<p>&emsp;&emsp;此时可看到飞控的航向和GPS的航向一致，如果单独转动飞控，飞控的航向会变化，但是几秒钟后会回到GPS航向，这是因为飞控使用了IMU，磁罗盘和GPS航向的融合数据。<br></p>
+<p><img alt="QGC" class="center-image" src="../pic21.png" /> </p>
+<p>&emsp;&emsp;上图的效果是在双天线和飞控的相对位置如下图所示的前提下<br></p>
+<p><img alt="QGC" class="center-image" src="../../b92/pic2.png" /> </p>
+<p>&emsp;&emsp;如无法按图中相对位置安装（例如六轴多旋翼），则需要修改板卡参数。请参见相关说明。<br></p>
+<p><br>
+&emsp;前往淘宝店选购：<a href="https://shop571754683.taobao.com/" target="_blank">淘宝店铺</a>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+前往B站查看教程：<a href="https://space.bilibili.com/1105134755" target="_blank">Bilibili</a><br>
+ <img alt="淘宝" src="../../link/taobao.png" /> <strong>欢迎扫码访问</strong> <img alt="B站" src="../../link/bili.png" /> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
